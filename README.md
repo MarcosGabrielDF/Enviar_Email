@@ -68,29 +68,12 @@ Siga o passo a passo abaixo para criá-la:
 
 ---
 
-## 🛠️ O que você precisa alterar no código?
+## 🛠️ Configurações no corpo do email.
 
-Abra o seu arquivo Python e localize a seção **CONFIGURAÇÕES** no início do código. Você deverá alterar os seguintes campos:
-
-### 1. Dados de Remetente e Servidor (`CONFIGURAÇÕES`)
-* **`SENDER_EMAIL`**: Substitua `"SEU_EMAIL@gmail.com"` pelo seu endereço de e-mail real do Gmail que fará o envio.
-* **`SENDER_PASSWORD`**: Substitua `"SENHA_APLICATIVO"` pela sua **Senha de Aplicativo** do Gmail de 16 caracteres (veja a seção de segurança abaixo de como gerá-la).
-
-### 2. Arquivo CSV com os Contatos
-* **`ARQUIVO_CSV`**: Substitua `"NOME_DO_ARQUIVO"` pelo nome exato do seu arquivo CSV (por exemplo: `"contatos.csv"`). 
-  > **Nota sobre o formato:** Como o professor enviou a lista em formato `.docx` (Word), você precisará converter esses dados para uma tabela em CSV contendo obrigatoriamente duas colunas principais: **`nome`** e **`email`**.
-  > 
-  > *Exemplo de estrutura do CSV:*
-  > ```csv
-  > nome,email
-  > João Silva,joao@email.com
-  > Maria Souza,maria@email.com
-  > ```
-
-### 3. Link do Formulário
+### 1. Link do Formulário
 * **`link_forms`**: Substitua `"SEU_LINK"` pelo link oficial do seu Google Forms que os destinatários devem responder.
 
-### 4. Assinatura do E-mail
+### 2. Assinatura do E-mail
 * No corpo da mensagem (`corpo`), altere o texto fixo da assinatura:
   ```python
   <p>Atenciosamente,</p>
